@@ -15,8 +15,16 @@ class Main {
     public static void main(String[] args) {
         Dict dict = new Dict();
 
+        /* uncomment this part to run in coderpad */
+        // String test = "ppeall";
+        // System.out.println("input: " + test);
+        // System.out.println("output: " + dict.getAnagram(test));
+        /* uncomment this part to run in coderpad */
+
+        /* comment this part to run in coderpad */
         System.out.println("************run tests************");
-        try (BufferedReader br = new BufferedReader(new FileReader("test.txt"))) {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("test.txt"));
             String content = new String(Files.readAllBytes(Paths.get("test.txt")));
             String[] inputs = content.split("\n");
             for (String input : inputs) {
@@ -28,6 +36,7 @@ class Main {
             e.printStackTrace();
         }
         System.out.println("************end tests************");
+        /* comment this part to run in coderpad */
     }
 }
 

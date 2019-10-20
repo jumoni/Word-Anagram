@@ -11,4 +11,5 @@ chmod +x runme.sh
 open "test.txt" and add your tests
 
 ## To run in coderpad
-change the class name "Main" to "Solution" in Main.class
+change the class name "Main" to "Solution" in Main.java
+change test case source following the instructions in Main
